@@ -63,7 +63,7 @@ public class Exercise2 {
     }
 
     @Test
-    public void testListaDeFiguras() {
+    public void testListaDeFiguras() throws NumeroInvalidoDeLados {
         // Given:
         List<Figura> figuras = new ArrayList<>();
 

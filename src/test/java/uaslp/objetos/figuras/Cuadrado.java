@@ -1,7 +1,7 @@
 package uaslp.objetos.figuras;
 
 public class Cuadrado extends Figura implements DrawableItem{
-    private double lado;
+    private Double lado;
     private String name = "Cuadrado";
 
     public Cuadrado() {
@@ -20,7 +20,10 @@ public class Cuadrado extends Figura implements DrawableItem{
         this.lado = lado;
     }
 
-    public double getArea() {
+    public double getArea() throws LadoNoProvistoException {
+        if(lado==null){
+            throw new LadoNoProvistoException("El valor de lado está vacio.");
+        }
         return lado * lado;
     }
 

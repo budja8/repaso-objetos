@@ -1,8 +1,8 @@
 package uaslp.objetos.figuras;
 
-public class Triangulo extends Figura{
-    private double base;
-    private double altura;
+public class Triangulo extends Figura {
+    private Double base;
+    private Double altura;
     private String description = "Cualquier triangulo";
     private String name;
 
@@ -34,8 +34,13 @@ public class Triangulo extends Figura{
         this.altura = altura;
     }
 
-    public double getArea() {
-        return (base*altura)/2;
+    public double getArea() throws BaseNoProvistaException, AlturaNoProvistaException {
+        if (base == null) {
+            throw new BaseNoProvistaException("La base está vacia");
+        } else if (altura == null) {
+            throw new AlturaNoProvistaException("La altura está vacia");
+        }
+        return (base * altura) / 2;
     }
 
     public String getDescription() {
