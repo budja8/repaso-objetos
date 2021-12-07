@@ -15,7 +15,7 @@ public class Exercise2 {
     // NO DEBES MODIFICAR PARA NADA ESTA CLASE
 
     @Test
-    public void testTrianguloDescription(){
+    public void testTrianguloDescription() {
         // Given:
         Triangulo triangulo = new Triangulo();
 
@@ -27,7 +27,7 @@ public class Exercise2 {
     }
 
     @Test
-    public void testTrianguloEquilateroDescription(){
+    public void testTrianguloEquilateroDescription() {
         // Given:
         Triangulo triangulo = new TrianguloEquilatero();
 
@@ -39,7 +39,7 @@ public class Exercise2 {
     }
 
     @Test
-    public void testTrianguloEscalenoDescription(){
+    public void testTrianguloEscalenoDescription() {
         // Given:
         Triangulo triangulo = new TrianguloEscaleno();
 
@@ -51,7 +51,7 @@ public class Exercise2 {
     }
 
     @Test
-    public void testTrianguloIsocelesDescription(){
+    public void testTrianguloIsocelesDescription() {
         // Given:
         Triangulo triangulo = new TrianguloIsoceles();
 
@@ -63,7 +63,7 @@ public class Exercise2 {
     }
 
     @Test
-    public void testListaDeFiguras(){
+    public void testListaDeFiguras() {
         // Given:
         List<Figura> figuras = new ArrayList<>();
 
@@ -80,21 +80,21 @@ public class Exercise2 {
         Assertions.assertEquals("Triangulo Escaleno", figuras.get(3).getName());
         Assertions.assertEquals("Triangulo Isoceles", figuras.get(4).getName());
 
-        Assertions.assertTrue(figuras.get(0) instanceof  Cuadrado);
-        Assertions.assertTrue(figuras.get(1) instanceof  PoligonoRegular);
-        Assertions.assertTrue(figuras.get(2) instanceof  TrianguloEquilatero);
-        Assertions.assertTrue(figuras.get(3) instanceof  TrianguloEscaleno);
-        Assertions.assertTrue(figuras.get(4) instanceof  TrianguloIsoceles);
+        Assertions.assertTrue(figuras.get(0) instanceof Cuadrado);
+        Assertions.assertTrue(figuras.get(1) instanceof PoligonoRegular);
+        Assertions.assertTrue(figuras.get(2) instanceof TrianguloEquilatero);
+        Assertions.assertTrue(figuras.get(3) instanceof TrianguloEscaleno);
+        Assertions.assertTrue(figuras.get(4) instanceof TrianguloIsoceles);
 
-        Assertions.assertTrue(figuras.get(2) instanceof  Triangulo);
-        Assertions.assertTrue(figuras.get(3) instanceof  Triangulo);
-        Assertions.assertTrue(figuras.get(4) instanceof  Triangulo);
+        Assertions.assertTrue(figuras.get(2) instanceof Triangulo);
+        Assertions.assertTrue(figuras.get(3) instanceof Triangulo);
+        Assertions.assertTrue(figuras.get(4) instanceof Triangulo);
 
-        Assertions.assertTrue(figuras.get(0) instanceof  DrawableItem);
-        Assertions.assertTrue(figuras.get(1) instanceof  DrawableItem);
-        Assertions.assertTrue(figuras.get(2) instanceof  DrawableItem);
-        Assertions.assertTrue(figuras.get(3) instanceof  DrawableItem);
-        Assertions.assertTrue(figuras.get(4) instanceof  DrawableItem);
+        Assertions.assertTrue(figuras.get(0) instanceof DrawableItem);
+        Assertions.assertTrue(figuras.get(1) instanceof DrawableItem);
+        Assertions.assertTrue(figuras.get(2) instanceof DrawableItem);
+        Assertions.assertTrue(figuras.get(3) instanceof DrawableItem);
+        Assertions.assertTrue(figuras.get(4) instanceof DrawableItem);
     }
 
 }
