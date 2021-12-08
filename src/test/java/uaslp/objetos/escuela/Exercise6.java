@@ -1,8 +1,10 @@
 package uaslp.objetos.escuela;
 
 import org.junit.jupiter.api.Test;
+import org.mockito.Mockito;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
+import static org.assertj.core.api.AssertionsForClassTypes.in;
 
 public class Exercise6 {
 
@@ -20,9 +22,11 @@ public class Exercise6 {
      */
 
     @Test
-    public void validarInterfacesCreadas(){
+    public void validarInterfacesCreadas() {
         assertThat(Dependencia1.class).isInterface();
         assertThat(Dependencia2.class).isInterface();
         assertThat(Dependencia3.class).isInterface();
     }
+
+
 }
